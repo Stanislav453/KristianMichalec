@@ -19,15 +19,61 @@
 }
 
 .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 100%;
   height: auto;
   background-color: #f8f8f8;
   z-index: 1;
 }
 
-.header-right h1 {
-  font-size: 60px;
+.header-right h2 {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
-  font-family: 'Times New Roman', Times, serif;
+  margin-left: 3%;
+  margin-top: 10%;
+}
+
+.header-right h1 {
+  font-size: 120px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 3%;
+  line-height: 100px;
+  color: green;
+}
+
+.header-right p {
+  margin-left: 3%;
+}
+
+.header-right nav {
+  background-color: green;
+}
+
+.header-right nav ul {
+  margin-left: -31px;
+  margin-bottom: 0;
+}
+
+.header-right nav ul li {
+  display: inline-block !important;
+  padding: 10px 25px 10px 25px;
+}
+
+.header-right nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
