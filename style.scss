@@ -40,7 +40,7 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: 900;
 
-            margin-left: 3%;
+            margin-left: $main-margin;
             margin-top: 10%;
 
         }
@@ -51,12 +51,17 @@
             font-weight: 900;
             font-family: "Times New Roman", Times, serif;
 
-            margin-left: 3%;
+            margin-left: $main-margin;
 
             line-height: 100px;
 
             color: $main-color;
 
+        }
+
+
+        p {
+            margin: $main-margin 42% 0% $main-margin;
         }
 }
 
