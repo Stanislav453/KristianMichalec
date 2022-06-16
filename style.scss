@@ -30,6 +30,10 @@
 }
 
 .header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+
     max-width: 100%;
     height: auto;
     background-color: $header-left-backgroundColor;
@@ -61,8 +65,32 @@
 
 
         p {
-            margin: $main-margin 42% 0% $main-margin;
+            margin-left: $main-margin;;
         }
+
+        nav {
+            background-color: $main-color;
+
+            ul {
+                margin-left: -31px;
+                margin-bottom: 0;
+
+                li {
+                    display: inline-block !important;
+                    padding: 10px 25px 10px 25px;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+
+                        font-size: 20px;
+                        font-weight: 900;
+
+                    }
+                }
+            }
+        }
+
 }
 
 
