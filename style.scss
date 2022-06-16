@@ -14,7 +14,7 @@
     right: 0;
     z-index: 0;
 
-    background-color: $background-line-color;
+    background-color: $main-color;
 }
 
 
@@ -34,18 +34,28 @@
     height: auto;
     background-color: $header-left-backgroundColor;
     z-index: 1;
+
+        h2 {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+
+            margin-left: 3%;
+            margin-top: 10%;
+
+        }
+
      
         h1 {
             font-size: 120px;
             font-weight: 900;
             font-family: "Times New Roman", Times, serif;
 
-            margin-top: 10%;
             margin-left: 3%;
 
             line-height: 100px;
 
-            color: $background-line-color;
+            color: $main-color;
 
         }
 }
