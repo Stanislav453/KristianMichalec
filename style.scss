@@ -37,7 +37,14 @@
     max-width: 100%;
     height: auto;
     background-color: $header-left-backgroundColor;
+    position: relative;
     z-index: 1;
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 
         h2 {
             font-size: 20px;
@@ -89,6 +96,7 @@
                     }
                 }
             }
+        
         }
 
 }
