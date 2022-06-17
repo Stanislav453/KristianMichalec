@@ -32,7 +32,14 @@
   max-width: 100%;
   height: auto;
   background-color: #f8f8f8;
+  position: relative;
   z-index: 1;
+}
+
+.header-right img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .header-right h2 {
@@ -53,7 +60,24 @@
 }
 
 .header-right p {
+  width: 480px;
   margin-left: 3%;
+}
+
+.header-right .phone {
+  display: inline-block;
+  color: #000;
+  text-align: right;
+  text-decoration: none;
+  padding-right: 10px;
+  margin-left: 720px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.header-right .phone:hover {
+  text-decoration: underline;
+  color: #e45e5e;
 }
 
 .header-right nav {
@@ -75,5 +99,30 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 900;
+}
+
+/*====== O MNE BLOCK ========== */
+.about-right img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-left {
+  background-color: #f8f8f8;
+}
+
+.about-left h2 {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 75px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.about-left p {
+  margin-left: 3%;
+  margin-right: 3%;
 }
 /*# sourceMappingURL=style.css.map */
