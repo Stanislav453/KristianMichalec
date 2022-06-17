@@ -1,0 +1,8 @@
+@mixin h2-text {
+    color: $main-color;
+
+    font-family: $main-font;
+    font-size: 75px;
+    font-weight: 900;
+    text-align: center;
+}
