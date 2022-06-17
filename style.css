@@ -125,4 +125,26 @@
   margin-left: 3%;
   margin-right: 3%;
 }
+
+.kurz-block {
+  background-color: #f8f8f8;
+}
+
+.kurz-block h2 {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 75px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.kurz-block ul {
+  border-left: 1px solid #000;
+  margin-left: 10px;
+}
+
+.kurz-block ul li {
+  list-style-type: none;
+  margin-left: -10px;
+}
 /*# sourceMappingURL=style.css.map */
