@@ -77,16 +77,24 @@
         }
 
         .phone {
+            display: inline-block;
             color: #000;
 
             text-align: right;
             text-decoration: none;
 
             padding-right: 10px;
+            margin-left: 720px;
 
             font-weight: 700;
             font-size: 23px;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: rgb(228, 94, 94);
+                }
         }
+
 
         nav {
             background-color: $main-color;
