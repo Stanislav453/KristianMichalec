@@ -150,23 +150,64 @@
 // ======= KURZY BLOCK ============================================
 .kurz-block {
     background-color: $main-block-backgroundColor;
-
-        h2 {
-            @include h2-text()
-        }
-
-        ul {
-            border-left: 1px solid #000;
-            margin-left: 10px;
-
-
-            li {
-                list-style-type: none;
-                margin-left: -10px;
-            }
-        }
+    padding-top: $main-margin;
 
 }
+
+.header-kurz { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $main-color;
+    margin-left: $main-margin;
+    margin-right: $main-margin;
+
+    &::after{
+        content: "";
+        width: 150px;
+        height: 8px;
+        background: green;
+    }
+
+    h2 {
+        @include h2-text();
+        padding-bottom: $main-margin;
+
+    }
+
+}
+
+
+.content-line {
+ 
+    @include content-line();
+
+
+}
+
+.content-wrap {
+    display: flex;
+    width: calc(50% - 30px);
+    margin-left: 3%;
+    margin-right: 3.4%;
+}
+
+
+.content-wrap:nth-of-type(odd){ 
+
+    @include content-wrap();
+}
+
+.content-line:nth-of-type(2n) {
+    @include content-line();
+    
+}
+
+.content-wrap:nth-of-type(2n){
+    @include content-wrap-2();
+   
+}
+
 
 
 
