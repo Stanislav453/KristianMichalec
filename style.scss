@@ -5,11 +5,22 @@
 //     outline: 1px solid red;
 // }
 
+/* Všeobecné */
+.second-header { 
+    @include second-header();
+   
+   }
+
+.row {
+    position: relative;
+    z-index: 2;
+}
+
 .background-line {
     width: 100%;
     height: 300px;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 0;
@@ -125,7 +136,7 @@
 /*====== O MNE BLOCK ========== */
 
 .about-right {
-
+    background-color: $main-block-backgroundColor;
     img {
         max-width: 100%;
         height: 100%;
@@ -149,34 +160,9 @@
 
 // ======= KURZY BLOCK ============================================
 .kurz-block {
-    background-color: $main-block-backgroundColor;
-    padding-top: $main-margin;
+    @include block();
 
 }
-
-.header-kurz { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid $main-color;
-    margin-left: $main-margin;
-    margin-right: $main-margin;
-
-    &::after{
-        content: "";
-        width: 150px;
-        height: 8px;
-        background: green;
-    }
-
-    h2 {
-        @include h2-text();
-        padding-bottom: $main-margin;
-
-    }
-
-}
-
 
 .content-line {
  
@@ -206,6 +192,12 @@
 .content-wrap:nth-of-type(2n){
     @include content-wrap-2();
    
+}
+
+/*=== Cennik ===== */
+
+.cennik-block {
+    @include block();
 }
 
 
