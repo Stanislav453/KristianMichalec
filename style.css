@@ -277,7 +277,7 @@
   text-align: left;
 }
 
-/*=== Cennik ===== */
+/*=== CENNIK BLOCK ===== */
 .cennik-block {
   background-color: #f8f8f8;
   padding-top: 3%;
@@ -286,5 +286,28 @@
 .cennik-block table {
   width: 94%;
   margin-left: 3%;
+}
+
+/*=== SLUZBY BLOCK ================ */
+.sluzby-block {
+  background-color: #f8f8f8;
+  padding-top: 3%;
+}
+
+.sluzby-block h3 {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  font-weight: 900;
+  color: green;
+}
+
+.sluzby-block ul {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.sluzby-block span {
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
