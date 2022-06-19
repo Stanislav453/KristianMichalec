@@ -310,4 +310,32 @@
 .sluzby-block span {
   font-weight: 900;
 }
+
+/*=== METODY BLOCK ====================== */
+.metody-block {
+  background-color: #f8f8f8;
+  padding-top: 3%;
+}
+
+.metody-block .method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.metody-block .method li {
+  list-style-type: square;
+  font-size: 18px;
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */
