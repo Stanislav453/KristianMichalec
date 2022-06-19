@@ -1,8 +1,48 @@
 @charset "UTF-8";
+/* NADPISY STRÁNKY */
+/* OBSAH STRÁNKY */
+/* Všeobecné */
+.second-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid green;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.second-header::after {
+  content: "";
+  width: 150px;
+  height: 8px;
+  background: green;
+}
+
+.second-header h2 {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 75px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.row {
+  position: relative;
+  z-index: 2;
+}
+
 .background-line {
   width: 100%;
   height: 300px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 0;
@@ -102,6 +142,10 @@
 }
 
 /*====== O MNE BLOCK ========== */
+.about-right {
+  background-color: #f8f8f8;
+}
+
 .about-right img {
   max-width: 100%;
   height: 100%;
@@ -129,38 +173,6 @@
 .kurz-block {
   background-color: #f8f8f8;
   padding-top: 3%;
-}
-
-.header-kurz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid green;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.header-kurz::after {
-  content: "";
-  width: 150px;
-  height: 8px;
-  background: green;
-}
-
-.header-kurz h2 {
-  color: green;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 75px;
-  font-weight: 900;
-  text-align: center;
-  padding-bottom: 3%;
 }
 
 .content-line {
@@ -266,4 +278,8 @@
 }
 
 /*=== Cennik ===== */
+.cennik-block {
+  background-color: #f8f8f8;
+  padding-top: 3%;
+}
 /*# sourceMappingURL=style.css.map */
