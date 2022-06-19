@@ -228,6 +228,26 @@
         }
 }
 
+/*=== METODY BLOCK ====================== */
+.metody-block {
+    @include block();
+
+        .method {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: $main-margin;
+            margin-left: $main-margin;
+            margin-right: $main-margin;
+
+                li {
+                    list-style-type: square;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+        }
+}
+
 
 
 
