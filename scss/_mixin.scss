@@ -36,6 +36,7 @@
 @mixin block(){
     background-color: $main-block-backgroundColor;
     padding-top: $main-margin;
+
 }
 
 @mixin content-line() {
