@@ -194,7 +194,7 @@
    
 }
 
-/*=== Cennik ===== */
+/*=== CENNIK BLOCK ===== */
 
 .cennik-block {
     @include block();
@@ -203,6 +203,28 @@
             width: 94%;
             margin-left: $main-margin;
             
+        }
+}
+
+/*=== SLUZBY BLOCK ================ */
+
+.sluzby-block{
+    @include block();
+        h3 {
+            margin-top: $main-margin;
+            margin-left: $main-margin;
+            margin-bottom: 1%;
+            font-weight: 900;
+            color: $main-color;
+        }
+
+        ul {
+            margin-left: $main-margin;
+            margin-right: $main-margin;
+        }
+
+        span {
+            font-weight: 900;
         }
 }
 
