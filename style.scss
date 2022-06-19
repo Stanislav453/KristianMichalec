@@ -221,6 +221,10 @@
         ul {
             margin-left: $main-margin;
             margin-right: $main-margin;
+
+            li {
+                list-style-type: square;
+            }
         }
 
         span {

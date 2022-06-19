@@ -307,6 +307,10 @@
   margin-right: 3%;
 }
 
+.sluzby-block ul li {
+  list-style-type: square;
+}
+
 .sluzby-block span {
   font-weight: 900;
 }
