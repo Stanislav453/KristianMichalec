@@ -221,9 +221,10 @@
         ul {
             margin-left: $main-margin;
             margin-right: $main-margin;
+            
 
             li {
-                list-style-type: square;
+                list-style-type: square
             }
         }
 
@@ -252,6 +253,22 @@
         }
 }
 
+/*=== KONTAKT BLOCK ============================= */
+
+.kontakt-block {
+    @include block();
+
+}
+
+.r-kontakt {
+    height: 450px;
+
+    img {
+        width: 94%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 
 
