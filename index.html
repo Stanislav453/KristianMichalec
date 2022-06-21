@@ -9,9 +9,27 @@
   </head>
   <body>
     <div class="background-line"></div>
-    <div class="container">  <!-- Začiatok stránky -->
+    <div class="container-fluid  g-0">
+            <div class="row shadow g-0">
+              <nav class="col-12">
+                <ul>
+                  <li><a href="#">O mne</a></li>
+                  <li><a href="#">Ceník</a></li>
+                  <li><a href="#">Služby</a></li>
+                  <li><a href="#">Metódy</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                  <li><a href="#">Fotogaléria</a></li>
+                </ul>
+              </nav>
+              <div class="col-4 header-left"><img src="img/ordinacia.jfif" alt="ordinacia" width="500" height="550"></div>
+              <div class="col-8 header-right">
+                <h1>Kristian  Michalec</h1>
+                <a class="phone" href="tel:+421918239799">0918239799</a>
+              </div>
+          </div>
+    <div class="container mt-5 ">  <!-- Začiatok stránky -->
       <!-- HEADER BLOCK =============================================================== -->
-        <div class="row mt-5 g-0">
+        <!-- <div class="row mt-5 g-0">
             <div class="col-4 header-left"><img src="img/ordinacia.jfif" alt="ordinacia" width="500" height="550"></div>
             <div class="col-8 header-right">
               <h2>FYZIO KM - zariadenie spoločných vyšetrovacích a liečebných zložiek</h2>
@@ -30,23 +48,22 @@
               </nav>
               <img src="img/fizio-obr.jpg" alt="anatomy" width="200" height="350">
             </div>
-        </div>
+        </div> -->
         <!-- O MNE BLOCK ============================================== -->
         <div class="row g-0">
-          <div class="col-8 about-left">
-            <h2>O mne</h2>
+          <div class="col-12 o_mne_block">
+            <header class="second-header">
+              <h2>O mne</h2>
+            </header>
             <p>Som absolventom Univerzity sv. Cyrila a Metoda v Trnave (Fakulta zdravotníckych vied), kde som bakalárske aj magisterské štúdium absolvoval s červeným diplomom. Získal som cenu rektora za bakalársku prácu (Možnosti fyzioterapie v prevencii zranení v športovom karate) a cenu dekana za mimoriadne výsledky v magisterskom štúdiu.
             Pôsobím ako fyzioterapeut pri ženách v Slovenskej hádzanárskej reprezentácii. Som aktívny športovec, ktorý sa venuje rôznym športom, vrcholovo karate, kde som pretekal za reprezentáciu Slovenska. Teraz pôsobím pri juniorskej aj seniorskej karate reprezentácii Slovenska ako fyzioterapeut na vrcholových podujatiach (MS, ME). Spolupracujem ako externý fyzioterapeut aj s karate klubom AC uniza Žilina a karate klub ZZO Čadca.
             Ako športový fyzioterapeut sa venujem v mojom súkromnom zdravotníckom zariadení športovcom na rôznych výkonnostných úrovniach od amatérskych až po vrcholových športovcov. Pracujem taktiež s ortopedickými pacientmi s problémami pohybového aparátu, po operáciach a jednoduchšími neurologickými diagnózami.
             Absolvoval som prax v rôznych nemocničných oddeleniach a v rehabilitačných zariadeniach, taktiež odbornú stáž v Sanatóriu Klimkovice, kde som sa venoval neurologickým a ambulantným pacientom. Pracoval som aj v súkromnom rehabilitačnom zariadení Rehamed v Piešťanoch, kde som pracoval s ortopedickými a ambulantnými pacientami. Spolupracujem so súkromnou rehabilitáciou Rehasport v Bratislave, kde som viedol aj praktickú výučbu </p></div>
-          <div class="col-4 about-right"><img src="img/kristian.jfif" alt="kristian"></div>
+          <!-- <div class="col-4 about-right"><img src="img/kristian.jfif" alt="kristian"></div> -->
         </div>
                 <!-- ====== CENNÍK BLOCK =========================================== -->
                 <div class="row g-0">
                   <div class="col-12 cennik-block">
-                    <header class="second-header">
-                      <h2>Cenník</h2>
-                    </header>
                     <div class="table-responsive-sm">
                       <table class="table">
                         <tr>
@@ -283,12 +300,12 @@
           <div class="col-12 kontakt-block">
             <header class="second-header"><h2>Kontakt</h2></header>
             <div class="row g-0">
-              <div class="d-flex justify-content-center col-6 ">
+              <div class="d-flex justify-content-center col-6 l-kontakt">
                 <ul class="mt-4">
-                  <li>kristian.michalec1111@gmail.com</li>
-                  <li>+421918239799</li>
-                  <li>023 02 Krásno nad Kysucou, Kalinovská 1202 (rodinný dom)</li>
-                  <li>Prevádzková doba: na objednávky</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" style="fill: rgba(0, 0, 0, 1);"><path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"></path></svg> <a href="mailto:kristian.michalec1111@gmail.com">kristian.michalec1111@gmail.com</a></li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" style="fill: rgb(0, 0, 0);"><path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path></svg>+421918239799</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" style="fill: rgba(0, 0, 0, 1);"><path d="M12.74 2.32a1 1 0 0 0-1.48 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1 1 1 0 0 0-.26-.68z"></path></svg>023 02 Krásno nad Kysucou, Kalinovská 1202 (rodinný dom)</li>
+                  <!-- <li>Prevádzková doba: na objednávky</li> -->
                 </ul>
               </div>
               <div class="col-6 r-kontakt">
