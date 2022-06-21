@@ -134,28 +134,29 @@ nav {
 
 /*====== O MNE BLOCK ========== */
 
-.about-right {
-    background-color: $main-block-backgroundColor;
-    img {
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.about-left {
-    background-color: $main-block-backgroundColor;
-
-        h2 {
-            @include h2-text()
-            
-        }
+.o_mne_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include block();
 
         p {
+            margin-top: $main-margin;
             margin-left: $main-margin;
             margin-right: $main-margin;
+            font-size: 20px;
+            line-height: 35px;
         }
+
+        img {
+            margin-top: $main-margin;
+            align-self: center;
+            border-radius: 50%;
+        }
+
+
 }
+
 
 // ======= KURZY BLOCK ============================================
 .kurz-block {
