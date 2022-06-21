@@ -49,13 +49,47 @@
   background-color: green;
 }
 
+.shadow {
+  -webkit-box-shadow: 5px 10px 8px 10px #888888;
+          box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.container-fluid {
+  border: 1px solid black;
+}
+
 /*=== Hlavička === */
+nav {
+  background-color: green;
+}
+
+nav ul {
+  margin-left: -31px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block !important;
+  padding: 20px 25px 20px 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+
 .header-left {
-  max-width: 100%;
+  z-index: 1;
+}
+
+.header-left img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 1;
 }
 
 .header-right {
@@ -95,6 +129,7 @@
   font-weight: 900;
   font-family: "Times New Roman", Times, serif;
   margin-left: 3%;
+  margin-top: 3%;
   line-height: 100px;
   color: green;
 }
@@ -118,27 +153,6 @@
 .header-right .phone:hover {
   text-decoration: underline;
   color: #e45e5e;
-}
-
-.header-right nav {
-  background-color: green;
-}
-
-.header-right nav ul {
-  margin-left: -31px;
-  margin-bottom: 0;
-}
-
-.header-right nav ul li {
-  display: inline-block !important;
-  padding: 20px 25px 20px 25px;
-}
-
-.header-right nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 900;
 }
 
 /*====== O MNE BLOCK ========== */
@@ -358,5 +372,23 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.l-kontakt ul li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #999999;
+  padding: 10px;
+}
+
+.l-kontakt ul li svg {
+  margin-right: 3px;
+}
+
+.l-kontakt ul li a {
+  color: #000;
+  font-weight: 900;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
