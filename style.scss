@@ -187,7 +187,17 @@ nav {
     width: calc(50% - 30px);
     margin-left: 3%;
     margin-right: 3.4%;
-}
+
+    li {
+        font-size: 19px;
+        padding: 8px 20px;
+        margin: 3px 0;
+    }
+
+
+    }
+
+
 
 
 .content-wrap:nth-of-type(odd){ 
@@ -232,10 +242,34 @@ nav {
         ul {
             margin-left: $main-margin;
             margin-right: $main-margin;
+            padding: 0;
             
 
             li {
-                list-style-type: square
+                list-style-type: none;
+                padding: 20px;
+                background-color: $main-color;
+                color: #fff;
+                margin-top: 1%;
+                cursor: pointer;
+                transition: background-color .3s;
+
+                &:hover {
+                    background-color: lighten(green, 10%);
+                    transition: background-color .3s;
+                }
+
+                i {
+                    float: right;
+                    font-size: 30px;
+                }
+
+                p {
+                    display: none;
+                    margin-top: 15px;
+                }
+                
+                
             }
         }
 
