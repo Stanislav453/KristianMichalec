@@ -5,6 +5,9 @@
 //     outline: 1px solid red;
 // }
 
+/* JS */
+
+
 /* Všeobecné */
 .second-header { 
     @include second-header();
@@ -267,7 +270,10 @@ nav {
                 p {
                     display: none;
                     margin-top: 15px;
+                    
                 }
+
+    
                 
                 
             }
