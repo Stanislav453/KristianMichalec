@@ -50,13 +50,48 @@
 
 /*=== Hlavička === */
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: green;
+}
+
+nav .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .icon a {
+  color: #fff;
+  font-size: 35px;
+}
+
+nav svg {
+  margin-right: 1%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 nav ul {
   margin-left: -31px;
   margin-bottom: 0;
-  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 nav ul li {
