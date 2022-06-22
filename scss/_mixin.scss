@@ -102,3 +102,25 @@
         }
     
 }
+
+@mixin wraper-header-style(){ 
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    margin-top: .1%;
+
+    background-color: green;
+    transition: background-color .3s;
+    cursor: pointer;
+
+        &:hover {
+            background-color: lighten($color: green, $amount: 5);
+            transition: background-color .3s;
+        }
+
+    h2 {
+        color: #fff;
+        font-weight: 900;
+    }
+}
