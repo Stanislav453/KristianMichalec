@@ -28,12 +28,31 @@
 /*=== Hlavička === */
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: $main-color;
+
+    .icon {
+        display: flex;
+        align-items: center;
+
+        a{
+            color: #fff;
+            font-size: 35px;
+        }
+    }
+
+    svg {
+       margin-right: 1%;
+       align-self: flex-end;
+    }
 
     ul {
         margin-left: -31px;
         margin-bottom: 0;
-        text-align: center;
+        align-self: center;
 
         li {
             display: inline-block !important;
