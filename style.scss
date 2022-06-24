@@ -7,6 +7,27 @@
 
 /* JS */
 
+/*====== Back to home button ================= */
+
+.back_to_home {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 10%;
+    z-index: 100;
+
+    i {
+        font-size: 90px;
+        color: $main-color;
+        transition: color .3s;
+
+        &:hover {
+            color: $hover-color;
+            transition: color .3s;
+        }
+    }
+}
+
 
 /* Všeobecné */
 .second-header { 
@@ -74,14 +95,14 @@ nav {
                 font-size: 20px;
                 font-weight: 900;
 
-                background-color: green;
+                background-color: $main-color;
                 
                 transition-property: color, background-color;
                 transition-duration: .3s, .3s;
 
                 &:hover {
                     color: darken(#fff, 10%);
-                    background-color: lighten(green, 10%);
+                    background-color: $hover-color;
                     transition-property: color, background-color;
                     transition-duration: .3s, .3s;
 
@@ -149,7 +170,7 @@ nav {
 
     h3 {
 
-        color: green;
+        color: $main-color;
 
         font-size: 65px;
         font-weight: 900;
@@ -181,7 +202,7 @@ nav {
         font-weight: 900;
 
         i {
-            color: green;
+            color: $main-color;
             font-size: 30px;
             vertical-align: -3px;
             padding-right: 5px;
@@ -203,7 +224,7 @@ nav {
                 transition: color .3s;
 
                 &:hover {
-                    color: green;
+                    color: $main-color;
                     transition: color .3s;
                 }
 
@@ -327,7 +348,7 @@ nav {
                 transition: background-color .3s;
 
                 &:hover {
-                    background-color: lighten(green, 10%);
+                    background-color: $hover-color;
                     transition: background-color .3s;
                 }
 
@@ -424,7 +445,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 350px;
-    background-color: green;
+    background-color: $main-color;
 
     h1 {
         font-size: 115px;
