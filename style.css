@@ -2,6 +2,28 @@
 /* NADPISY STRÁNKY */
 /* OBSAH STRÁNKY */
 /* JS */
+/*====== Back to home button ================= */
+.back_to_home {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 10%;
+  z-index: 100;
+}
+
+.back_to_home i {
+  font-size: 90px;
+  color: green;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.back_to_home i:hover {
+  color: #00b300;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
 /* Všeobecné */
 .second-header {
   display: -webkit-box;
