@@ -18,6 +18,10 @@
     box-shadow: 5px 10px 8px 10px #888888;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 
 /*=== Hlavička === */
@@ -33,32 +37,55 @@ nav {
         display: flex;
         align-items: center;
 
+        margin-right: 2%;
+
         a{
             color: #fff;
             font-size: 35px;
         }
-    }
 
-    svg {
-       margin-right: 1%;
-       align-self: flex-end;
+        i {
+            transform: scale(1);
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform .3s;
+            }
+        }
     }
 
     ul {
         margin-left: -31px;
         margin-bottom: 0;
         align-self: center;
+        padding: 0;
 
         li {
             display: inline-block !important;
-            padding: 20px 25px 20px 25px;
+
 
             a {
+                padding: 30px;
+
                 color: #fff;
                 text-decoration: none;
 
                 font-size: 20px;
                 font-weight: 900;
+
+                background-color: green;
+                
+                transition-property: color, background-color;
+                transition-duration: .3s, .3s;
+
+                &:hover {
+                    color: darken(#fff, 10%);
+                    background-color: lighten(green, 10%);
+                    transition-property: color, background-color;
+                    transition-duration: .3s, .3s;
+
+                }
 
             }
         }
@@ -84,7 +111,9 @@ nav {
 
     max-width: 100%;
     height: auto;
+
     background-color: $main-block-backgroundColor;
+
     position: relative;
     z-index: 1;
 
@@ -94,55 +123,95 @@ nav {
         right: 0;
     }
 
-        h2 {
-            font-size: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: 900;
+    h1 {
+        font-size: 120px;
+        font-weight: 900;
+        font-family: $main-font;
 
-            margin-left: $main-margin;
-            margin-top: 10%;
+        margin-left: $main-margin;
+        margin-top: $main-margin;
 
+        line-height: 100px;
+
+        color: $main-color;
+
+    }
+
+    h2 {
+        font-size: 35px;
+        font-family: $second-font;
+        font-weight: 900;
+
+        margin-left: $main-margin;
+
+            
+    }
+
+    h3 {
+
+        color: green;
+
+        font-size: 65px;
+        font-weight: 900;
+        font-family: $main-font;
+
+        margin-left: $main-margin;
+        
+
+        
+    }
+
+    h4 {
+        color: rgb(228, 94, 94);
+
+        font-size: 35px;
+        font-weight: 900;
+        font-family: $second-font;
+
+        margin-left: $main-margin;
+    }
+
+    ul {
+
+        display: flex;
+        flex-direction:  row;
+
+        font-family: $second-font;
+        font-size: 20px;
+        font-weight: 900;
+
+        i {
+            color: green;
+            font-size: 30px;
+            vertical-align: -3px;
+            padding-right: 5px;
         }
 
-     
-        h1 {
-            font-size: 120px;
-            font-weight: 900;
-            font-family: $main-font;
-
-            margin-left: $main-margin;
-            margin-top: $main-margin;
-
-            line-height: 100px;
-
-            color: $main-color;
-
-        }
-
-
-        p {
-            width: 480px;
-            margin-left: $main-margin;
-        }
-
-        .phone {
+        li {
             display: inline-block;
-            color: #000;
+            margin-right: 2%;
 
-            text-align: right;
-            text-decoration: none;
+            font-weight: 900;
 
-            padding-right: 10px;
-            margin-left: 720px;
+            a {
+                color: #000;
+                
+                font-weight: 900;
 
-            font-weight: 700;
-            font-size: 23px;
+                text-decoration: none;
+
+                transition: color .3s;
 
                 &:hover {
-                    text-decoration: underline;
-                    color: rgb(228, 94, 94);
+                    color: green;
+                    transition: color .3s;
                 }
+
+            }
         }
+    }
+
+
 
 }
 
