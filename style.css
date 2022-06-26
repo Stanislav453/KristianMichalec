@@ -2,6 +2,19 @@
 /* NADPISY STRÁNKY */
 /* OBSAH STRÁNKY */
 /* JS */
+.shadow {
+  -webkit-box-shadow: 5px 10px 8px 10px #888888;
+          box-shadow: 5px 10px 8px 10px #888888;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+  font-weight: 900;
+}
+
 /*====== Back to home button ================= */
 .back_to_home {
   display: none;
@@ -55,15 +68,6 @@
   font-weight: 900;
   text-align: center;
   padding-bottom: 3%;
-}
-
-.shadow {
-  -webkit-box-shadow: 5px 10px 8px 10px #888888;
-          box-shadow: 5px 10px 8px 10px #888888;
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*=== Hlavička === */
@@ -461,10 +465,6 @@ nav ul li a:hover {
 .sluzby-block ul li p {
   display: none;
   margin-top: 15px;
-}
-
-.sluzby-block span {
-  font-weight: 900;
 }
 
 /*=== METODY BLOCK ====================== */
