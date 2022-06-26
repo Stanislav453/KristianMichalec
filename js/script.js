@@ -1,3 +1,7 @@
+
+
+// ==== Sluzby block ====
+
 let sluzbyBlockLi = document.querySelectorAll(".sluzby-block-left ul > li");
     sluzbyBlockLi = Array.prototype.slice.call( sluzbyBlockLi );
 
