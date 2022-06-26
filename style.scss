@@ -7,6 +7,19 @@
 
 /* JS */
 
+
+.shadow {
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    font-weight: 900;
+}
+
 /*====== Back to home button ================= */
 
 .back_to_home {
@@ -34,14 +47,6 @@
     @include second-header();
    
    }
-
-.shadow {
-    box-shadow: 5px 10px 8px 10px #888888;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 
 
@@ -367,10 +372,6 @@ nav {
                 
                 
             }
-        }
-
-        span {
-            font-weight: 900;
         }
 }
 
