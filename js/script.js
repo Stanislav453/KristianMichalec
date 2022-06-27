@@ -26,12 +26,32 @@ let sluzbyBlockLi = document.querySelectorAll(".sluzby-block-left ul > li");
     sluzbyBlockLi = Array.prototype.slice.call( sluzbyBlockLi );
 
 
-
+// Left
  for(let i = 0; i < sluzbyBlockLi.length; i++ ) {
     sluzbyBlockLi[i].addEventListener("click", function(e) {
 
+
      if ( this.querySelector("p").style.display === "block" ){
-                this.querySelector("p").style.display = "none"
+                this.querySelector("p").style.display = "none";
+               
+        } else {
+            this.querySelector("p").style.display = "block";
+        }
+        
+    })
+ }
+
+ // Right
+ let sluzbyBlockLiR = document.querySelectorAll(".sluzby-block-right ul > li");
+     sluzbyBlockLiR = Array.prototype.slice.call( sluzbyBlockLiR );
+
+
+
+ for(let i = 0; i < sluzbyBlockLiR.length; i++ ) {
+    sluzbyBlockLiR[i].addEventListener("click", function(e) {
+
+     if ( this.querySelector("p").style.display === "block" ){
+                this.querySelector("p").style.display = "none";
         } else {
             this.querySelector("p").style.display = "block";
         }
