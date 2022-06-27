@@ -1,3 +1,23 @@
+"use strict"
+
+// === KURZY BLOCK ==============
+let kurzydiv = document.querySelectorAll(".content-wrap");
+
+for(let i = 0; i < kurzydiv.length; i++){
+    kurzydiv[i].addEventListener("click", function(e) {
+
+  if( this.querySelector("ul").style.display === "block" || this.querySelector(".line").style.display === "block"){
+    this.querySelector("ul").style.display = "none";
+    this.querySelector(".line").style.display = "none";
+} else {
+    this.querySelector("ul").style.display = "block";
+    this.querySelector(".line").style.display = "block";
+} 
+        
+
+    })
+}
+
 
 
 // ==== Sluzby block ====
