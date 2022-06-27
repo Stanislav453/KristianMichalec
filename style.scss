@@ -269,6 +269,7 @@ nav {
 .kurz-block {
     @include block();
 
+
 }
 
 .content-line {
@@ -284,11 +285,21 @@ nav {
     margin-left: 3%;
     margin-right: 3.4%;
 
-    li {
-        font-size: 19px;
-        padding: 8px 20px;
-        margin: 3px 0;
+    .line {
+        display: none;
     }
+
+    ul {
+        display: none;
+
+        li {
+            font-size: 19px;
+            padding: 8px 20px;
+            margin: 3px 0;
+        }
+    }
+
+ 
 
 
     }

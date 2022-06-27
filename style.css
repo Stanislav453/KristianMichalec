@@ -333,7 +333,15 @@ nav ul li a:hover {
   margin-right: 3.4%;
 }
 
-.content-wrap li {
+.content-wrap .line {
+  display: none;
+}
+
+.content-wrap ul {
+  display: none;
+}
+
+.content-wrap ul li {
   font-size: 19px;
   padding: 8px 20px;
   margin: 3px 0;
