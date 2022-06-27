@@ -419,6 +419,18 @@ nav ul li a:hover {
   margin-left: 3%;
 }
 
+.cennik-block table td {
+  border-bottom: 1px solid #adabab;
+}
+
+.cennik-block table ul {
+  padding: 0;
+}
+
+.cennik-block table ul li {
+  list-style-type: none;
+}
+
 /*=== SLUZBY BLOCK ================ */
 .sluzby-block {
   background-color: #f8f8f8;
