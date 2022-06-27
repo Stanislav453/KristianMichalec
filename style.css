@@ -360,6 +360,15 @@ nav ul li a:hover {
   padding-right: 20px;
   font-weight: 700;
   color: green;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.content-wrap:nth-of-type(odd) h4:hover {
+  color: #00b300;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 .content-wrap:nth-of-type(odd) ul {
@@ -405,6 +414,15 @@ nav ul li a:hover {
   padding-left: 20px;
   font-weight: 700;
   color: green;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.content-wrap:nth-of-type(2n) h4:hover {
+  color: #00b300;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 .content-wrap:nth-of-type(2n) ul {
@@ -460,6 +478,15 @@ nav ul li a:hover {
 }
 
 .sluzby-block ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   padding: 20px;
   background-color: green;
@@ -476,14 +503,34 @@ nav ul li a:hover {
   transition: background-color .3s;
 }
 
+.sluzby-block ul li span {
+  width: 80%;
+}
+
 .sluzby-block ul li i {
+  height: 20%;
   float: right;
-  font-size: 30px;
+  font-size: 40px;
+  margin-left: 3%;
+  margin-right: 1%;
+  vertical-align: middle;
 }
 
 .sluzby-block ul li p {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: none;
   margin-top: 15px;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+  align-self: flex-end;
 }
 
 /*=== METODY BLOCK ====================== */
@@ -603,5 +650,84 @@ nav ul li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   padding: 5px 2.5px;
+}
+
+/* TABLET */
+@media (max-width: 769px) {
+  .header-left {
+    display: none;
+  }
+}
+
+/* TELEFON */
+@media (max-width: 576px) {
+  .header-left {
+    display: none;
+  }
+  .header-right h1 {
+    font-size: 78px;
+  }
+  .header-right h2, .header-right h4 {
+    font-size: 22px;
+  }
+  .header-right h3 {
+    font-size: 40px;
+  }
+  .header-right ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 13px;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  .header-right ul li i {
+    font-size: 24px;
+  }
+  .o_mne_block p {
+    font-size: 17px;
+  }
+  .cennik-block table {
+    width: 100%;
+    margin-left: 0;
+  }
+  .content-wrap:nth-of-type(odd) {
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .content-wrap:nth-of-type(odd) ul {
+    padding: 0;
+  }
+  .content-wrap:nth-of-type(odd) ul li {
+    text-align: left;
+  }
+  .content-wrap:nth-of-type(odd) h4 {
+    margin-left: 3%;
+    text-align: left;
+  }
+  .content-wrap:nth-of-type(2n) {
+    margin-left: 3%;
+    width: 100%;
+  }
+  .content-wrap:nth-of-type(2n) ul:nth-child(1) {
+    display: block;
+  }
+  .content-wrap:nth-of-type(2n) ul {
+    padding: 0;
+  }
+  .content-wrap:nth-of-type(2n) h4 {
+    padding-left: 3%;
+  }
+  .method {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
