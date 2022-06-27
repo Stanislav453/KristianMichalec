@@ -371,8 +371,10 @@ nav {
             li {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+                
 
                 list-style-type: none;
                 padding: 20px;
@@ -386,32 +388,31 @@ nav {
                 &:hover {
                     background-color: $hover-color;
                     transition: background-color .3s;
+
+                
                 }
+
                 span {
-                    width: 80%;
+                    flex-grow: 1;
+                    flex-basis: 82%;
                 }
 
                 i {
-                    height: 20%;
-
-                    float: right;
+                    
                     font-size: 40px;
-                    margin-left: 3%;
                     margin-right: 1%;
-                    vertical-align: middle;
-
                     
                 }
 
                 p {  
-                    order: 3;
-                    align-self: flex-end;                
-                    flex-direction: column;
+                    flex-grow: 3;
 
                     display: none;
                     margin-top: 15px;
-                    flex-shrink: 3;
-                    align-self: flex-end;
+                    flex-basis: 100%;
+                    height: auto;
+                    
+                   
                     
                 }
 
@@ -622,6 +623,14 @@ nav {
 .method {
     flex-direction: column !important;
 }
+}
+
+// Sluzby block
+.sluzby-block {
+    ul {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
 
 
