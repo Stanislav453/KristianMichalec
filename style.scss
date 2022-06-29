@@ -51,6 +51,20 @@ span {
 
 /*=== Hlavička === */
 
+
+.ham-menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $main-color;
+
+    i {
+        display: block;
+        font-size: 70px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -81,13 +95,17 @@ nav {
     }
 
     ul {
+        display: flex;
+        flex-direction: row;
+        
         margin-left: -31px;
         margin-bottom: 0;
         align-self: center;
         padding: 0;
 
         li {
-            display: inline-block !important;
+            // display: inline-block !important;
+            list-style-type: none;
 
 
             a {
@@ -273,6 +291,13 @@ nav {
 
 }
 
+
+// .content-wrap  .content-kurzy-content .show-ul   {
+//     display: block;
+
+    
+// }
+
 .content-line {
  
     @include content-line();
@@ -285,6 +310,8 @@ nav {
     width: calc(50% - 30px);
     margin-left: 3%;
     margin-right: 3.4%;
+
+
 
     .line {
         display: none;
@@ -300,11 +327,8 @@ nav {
         }
     }
 
- 
-
 
     }
-
 
 
 
@@ -522,6 +546,30 @@ nav {
     }
 }
 
+/* pc */
+@media (max-width: 2650px){
+    .ham-menu {
+        display: none;
+    }
+
+}
+
+/* Laptop-l */
+@media (max-width: 1440px){
+    .ham-menu {
+        display: none;
+    }
+}
+
+
+/* Laptop */
+@media (max-width: 1025px){
+    .ham-menu {
+        display: none;
+    }
+}
+
+
 /* TABLET */
 @media (max-width: 769px ){
 .header-left {
@@ -529,13 +577,58 @@ nav {
     }
     }
 
+
 /* TELEFON */
 @media (max-width: 576px ){
+.ham-menu {
+    display: flex;
+}
+
 .header-left {
     display: none;
 }
 
+nav {
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 100;
+
+    background-color: rgba(0, 128, 0, .8);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        margin-left: 0;
+
+        li {
+
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid #fff;
+
+            a {
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+                background-color: rgba(0, 128, 0, .6);
+
+            }
+        }
+    }
+
+    .icon {
+
+        display: none;
+    }
+
+}
+
 .header-right {
+
     h1 {
         font-size: 78px;
     }
@@ -623,7 +716,6 @@ nav {
 .method {
     flex-direction: column !important;
 }
-}
 
 // Sluzby block
 .sluzby-block {
@@ -632,6 +724,8 @@ nav {
         margin-right: 1%;
     }
 }
+}
+
 
 
 
