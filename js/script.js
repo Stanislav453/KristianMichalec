@@ -1,7 +1,21 @@
 "use strict"
 
+// ===== Ham menu =======
+let menu = document.querySelector(".ham-menu > i");
+let nav = document.querySelector("nav");
+
+menu.addEventListener("click", function(e) {
+    if(nav.style.display === "block" ){
+        nav.style.display = "none"
+    } else {
+        nav.style.display = "block"
+    }
+});
+
 // === KURZY BLOCK ==============
 let kurzydiv = document.querySelectorAll(".content-wrap");
+
+
 
 for(let i = 0; i < kurzydiv.length; i++){
     kurzydiv[i].addEventListener("click", function(e) {
@@ -17,7 +31,6 @@ for(let i = 0; i < kurzydiv.length; i++){
 
     })
 }
-
 
 
 // ==== Sluzby block ====
