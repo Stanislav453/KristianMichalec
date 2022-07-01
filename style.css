@@ -494,13 +494,7 @@ nav ul li a:hover {
   color: green;
 }
 
-.sluzby-block ul {
-  margin-left: 3%;
-  margin-right: 3%;
-  padding: 0;
-}
-
-.sluzby-block ul li {
+.sluzby-block .acoredeon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,23 +510,24 @@ nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style-type: none;
+  color: #fff !important;
+  text-decoration: none;
+  cursor: pointer;
   padding: 20px;
   background-color: green;
-  color: #fff;
   margin-top: 1%;
-  cursor: pointer;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
+  margin-left: 3%;
+  -webkit-transition: 0.4;
+  transition: 0.4;
 }
 
-.sluzby-block ul li:hover {
-  background-color: #00b300;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
+.sluzby-block .acoredeon i {
+  color: #fff;
+  font-size: 40px;
+  margin-right: 1%;
 }
 
-.sluzby-block ul li span {
+.sluzby-block span {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -540,20 +535,23 @@ nav ul li a:hover {
       flex-basis: 82%;
 }
 
-.sluzby-block ul li i {
-  font-size: 40px;
-  margin-right: 1%;
+.sluzby-block p {
+  max-height: 0;
+  overflow: hidden;
+  margin-left: 3%;
+  background-color: green;
+  padding: 0 20px;
+  color: #fff;
+  -webkit-transition: max-height .3s ease-out;
+  transition: max-height .3s ease-out;
 }
 
-.sluzby-block ul li p {
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
-  display: none;
-  margin-top: 15px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  height: auto;
+.sluzby-block-right .acoredeon {
+  margin-right: 3%;
+}
+
+.sluzby-block-right p {
+  margin-right: 3%;
 }
 
 /*=== METODY BLOCK ====================== */
