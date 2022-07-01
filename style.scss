@@ -21,6 +21,7 @@ span {
 }
 
 
+
 /*====== Back to home button ================= */
 
 .back_to_home {
@@ -385,66 +386,69 @@ nav {
             font-weight: 900;
             color: $main-color;
         }
-
-        ul {
-            margin-left: $main-margin;
-            margin-right: $main-margin;
-            padding: 0;
             
-
-            li {
+            .acoredeon {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+                color: #fff !important;
                 
-
-                list-style-type: none;
+                text-decoration: none;
+                cursor: pointer;
                 padding: 20px;
                 background-color: $main-color;
-                color: #fff;
                 margin-top: 1%;
-                cursor: pointer;
-                transition: background-color .3s;
-        
+                margin-left: $main-margin;
 
-                &:hover {
-                    background-color: $hover-color;
-                    transition: background-color .3s;
+                transition: 0.4;
 
-                
+
+
+                i {
+                    color: #fff;
+                    font-size: 40px;
+                    margin-right: 1%;
+                    
                 }
+              }
+
 
                 span {
                     flex-grow: 1;
                     flex-basis: 82%;
                 }
 
-                i {
-                    
-                    font-size: 40px;
-                    margin-right: 1%;
-                    
-                }
 
                 p {  
-                    flex-grow: 3;
 
-                    display: none;
-                    margin-top: 15px;
-                    flex-basis: 100%;
-                    height: auto;
+                    max-height: 0;
+                    overflow: hidden;
+                    margin-left: $main-margin;
+                    background-color: $main-color;
+                    padding: 0 20px;
+                    color: #fff;
+                    transition: max-height .3s ease-out;
                     
                    
                     
                 }
 
     
-                
-                
-            }
-        }
+            
+            
+        
+}
+
+.sluzby-block-right {
+    .acoredeon {
+        margin-right: $main-margin;
+    }
+
+    p {
+        margin-right: $main-margin;
+    }
 }
 
 /*=== METODY BLOCK ====================== */
@@ -725,18 +729,4 @@ nav {
     }
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
