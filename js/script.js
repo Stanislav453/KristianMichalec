@@ -35,24 +35,30 @@ for(let i = 0; i < kurzydiv.length; i++){
 
 // ==== Sluzby block ====
 
-let sluzbyBlockLi = document.querySelectorAll(".sluzby-block-left ul > li");
-    sluzbyBlockLi = Array.prototype.slice.call( sluzbyBlockLi );
+let sluzbyBlockLiAcoredeon = document.getElementsByClassName("acoredeon");
+    
+ 
 
 
 // Left
- for(let i = 0; i < sluzbyBlockLi.length; i++ ) {
-    sluzbyBlockLi[i].addEventListener("click", function(e) {
 
 
-     if ( this.querySelector("p").style.display === "block" ){
-                this.querySelector("p").style.display = "none";
-               
-        } else {
-            this.querySelector("p").style.display = "block";
-        }
+for(let i = 0; i < sluzbyBlockLiAcoredeon.length; i++ ) {
+
+    sluzbyBlockLiAcoredeon[i].addEventListener("click", function(e) {
+
+    let panel =  this.nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
         
-    })
+    }
+
+        
+    });
  }
+
 
  // Right
  let sluzbyBlockLiR = document.querySelectorAll(".sluzby-block-right ul > li");
