@@ -45,14 +45,15 @@ let sluzbyBlockLiAcoredeon = document.getElementsByClassName("acoredeon");
 
 for(let i = 0; i < sluzbyBlockLiAcoredeon.length; i++ ) {
 
-    sluzbyBlockLiAcoredeon[i].addEventListener("click", function(e) {
-
+    sluzbyBlockLiAcoredeon[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    
     let panel =  this.nextElementSibling;
     if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
     } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
-        
+
     }
 
         
