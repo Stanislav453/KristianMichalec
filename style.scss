@@ -20,7 +20,9 @@ span {
     font-weight: 900;
 }
 
-
+.show-ul, .line-show {
+    display: block !important;
+}
 
 /*====== Back to home button ================= */
 
@@ -304,6 +306,13 @@ nav {
 
 
 }
+
+// .kurzy:nth-child(1){
+//     background-color: red;
+//     color: red  !important;
+// }
+
+
 
 .content-wrap {
     display: flex;
