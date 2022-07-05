@@ -8,12 +8,14 @@ let acordeonLiA = document.querySelectorAll(".acordeon-li a");
 
 menu.addEventListener("click", function (e) {
   nav.classList.toggle("show-nav");
+  this.classList.toggle("change-i");
 
   for (const value of acordeonLi) {
       value.classList.toggle("show-li")
   };
   
 });
+
 
 // ==== EXPANDUJÚCA FOTOGALERIA ================
 
