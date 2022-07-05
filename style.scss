@@ -260,6 +260,76 @@ nav {
 
 }
 
+// container-slide slide fotogaleri
+
+
+.img1 {
+    background-image: url(img/obr1.jpg);
+}
+
+.img2 {
+    background-image: url(img/obr2.jpg);
+}
+
+.img4 {
+    background-image: url(img/obr4.jpg);
+}
+
+.img5 {
+    background-image: url(img/obr5.jpg);
+}
+
+.container-slide {
+    display: flex;
+    width: 50vw;
+    margin-left: $main-margin;
+    margin-bottom: 1%;
+
+}
+
+
+.slide {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+
+    flex: .4; 
+    transition: flex 1s;
+
+    h2 {
+        font-size: 20px;
+        opacity: 0;   
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: black;
+        border-radius: 10px;
+    
+    }
+}
+
+.slide.active {
+    flex: 3;
+    transition: flex .3s ease-in-out;
+
+}
+
+.slide.active h2 {
+    opacity: 1;
+    transition: opacity 1s;
+
+}
+
+
 /*====== O MNE BLOCK ========== */
 
 .o_mne_block {
@@ -839,6 +909,12 @@ nav {
         font-size: 70px;
     }
 
+}
+
+// fotogaleria na headery
+
+.container-slide {
+    width: 55vh;
 }
 
 }

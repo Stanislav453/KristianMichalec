@@ -15,6 +15,28 @@ menu.addEventListener("click", function (e) {
   
 });
 
+// ==== EXPANDUJÚCA FOTOGALERIA ================
+
+const slides = document.querySelectorAll(".slide");
+
+
+slides.forEach(function(e) {
+    e.addEventListener("click", function() {
+        //active vymaze vsetkym
+        deleteActiveClass();
+        
+
+        e.classList.add("active");
+
+    });
+});
+
+function deleteActiveClass(){
+    slides.forEach(function(e) {
+        e.classList.remove("active");
+    });
+};
+
 // ==== O MNE BLOCK =======
 
 let showImg = document.querySelector(".showImg");
