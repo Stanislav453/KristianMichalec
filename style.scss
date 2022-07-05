@@ -14,6 +14,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
 }
 
 span {
@@ -34,13 +35,16 @@ span {
     z-index: 100;
 
     i {
-        font-size: 90px;
+        font-size: 100px;
         color: $main-color;
-        transition: color .3s;
+
+        transform: scale(.8);
+        transition: color .3s, transform 1s;
 
         &:hover {
+            transform: scale(1);
             color: $hover-color;
-            transition: color .3s;
+            transition: color .3s, transform 1s ;
         }
     }
 }
@@ -62,10 +66,17 @@ span {
 
     i {
         display: block;
-        font-size: 70px;
+        font-size: 65px;
         color: #fff;
         cursor: pointer;
+
+        transition: transform .3s;
     }
+}
+
+i.change-i {
+    transform: rotate(20deg);
+    transition: transform .3s;
 }
 
 nav {
@@ -173,12 +184,14 @@ nav {
         font-weight: 900;
         font-family: $main-font;
 
-        margin-left: $main-margin;
-        margin-top: $main-margin;
+        margin-top: 5px;
+        padding: 30px $main-margin;
 
         line-height: 100px;
 
-        color: $main-color;
+        color: #fff;
+        background-color: $main-color;
+        box-shadow: 5px 10px black;
 
     }
 
@@ -188,6 +201,9 @@ nav {
         font-weight: 900;
 
         margin-left: $main-margin;
+        margin-top: 20px;
+
+        color: #000;
 
             
     }
@@ -697,7 +713,7 @@ nav {
     }
 
 
-/* TELEFON */
+/* TELEFON 576px*/
 @media (max-width: 576px ){
 .ham-menu {
     display: flex;
@@ -733,6 +749,7 @@ nav {
             height: 0;
             padding: 0;
             transition: padding .4s, height .4s;
+            opacity: 0;
 
             &:last-child {
                 border: none;
@@ -743,6 +760,8 @@ nav {
                 text-align: center;
                 background-color: rgba(0, 128, 0, 0);
                 padding: 0px;
+                
+                
 
             }
         }
@@ -756,11 +775,13 @@ nav {
 }
 
 .show-nav {
+    
     height: 487px;
     transition: height .4s;
 }
 
 .acordeon-li.show-li {
+    opacity: 1;
     height: 100px;
     padding: 25px;
     transition:padding .4s, height .4s;
@@ -774,7 +795,8 @@ nav {
 .header-right {
 
     h1 {
-        font-size: 78px;
+        font-size: 77px;
+        padding: 5px $main-margin;
     }
 
     h2,h4 {
@@ -901,12 +923,20 @@ nav {
 
 .back_to_home  {
 
-    right: 5%;
-    bottom: 2%;
+    right: 2%;
+    bottom: 1%;
     
     i {
+        transform: scale(.8);
         color: #e45e5e;
-        font-size: 70px;
+        font-size: 90px;
+
+        &:hover {
+            
+            transform: scale(1);
+            color: #e45e5e;
+            transition: transform 1s;
+        }
     }
 
 }
@@ -917,5 +947,78 @@ nav {
     width: 55vh;
 }
 
+
 }
+
+
+
+/* Telefon 375px */
+@media (max-width: 375px) {
+
+// header
+
+.header-right {
+
+    h1 {
+        font-size: 68px;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+}
+
+// fotogaleria na headery
+.container-slide {
+    width: 50vh;
+
+}
+
+.slide:nth-of-type(3){
+    display: none;
+}
+
+}
+
+
+/* Telefon 375px */
+@media (max-width: 320px) {
+
+    // header
+    
+    .header-right {
+    
+        h1 {
+            font-size: 57px;
+            margin-bottom: 0;
+        }
+
+        h2, h4 {
+            font-size: 17px;
+        }
+    
+        h3 {
+            font-size: 30px;
+        }
+    
+    }
+    
+    // fotogaleria na headery
+    .container-slide {
+        width: 42vh;
+    
+    }
+    
+    .slide:nth-of-type(3){
+        display: none;
+    }
+    
+    }
+
+
+
+
+
 
