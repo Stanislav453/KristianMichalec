@@ -955,7 +955,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
+    width: 90%;
   }
   .content-wrap:nth-of-type(odd) ul {
     padding: 0;
@@ -969,7 +969,7 @@ nav ul li a:hover {
   }
   .content-wrap:nth-of-type(2n) {
     margin-left: 3%;
-    width: 100%;
+    width: 95%;
   }
   .content-wrap:nth-of-type(2n) ul:nth-child(1) {
     display: block;

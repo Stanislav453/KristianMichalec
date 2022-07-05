@@ -430,10 +430,12 @@ nav {
 .content-wrap:nth-of-type(odd){ 
 
     @include content-wrap();
+
 }
 
 .content-line:nth-of-type(2n) {
     @include content-line();
+ 
     
 }
 
@@ -787,11 +789,6 @@ nav {
     transition:padding .4s, height .4s;
 }
 
-// .show-a {
-//     padding: 25px;
-//     transition: padding .4s;
-// }
-
 .header-right {
 
     h1 {
@@ -844,7 +841,7 @@ nav {
 .content-wrap:nth-of-type(odd) {
     text-align: left;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
 
     ul {
         padding: 0;
@@ -862,7 +859,7 @@ nav {
 
 .content-wrap:nth-of-type(2n) {
     margin-left: 3%;
-    width: 100%;
+    width: 95%;
 
     ul:nth-child(1){
         display: block;;
