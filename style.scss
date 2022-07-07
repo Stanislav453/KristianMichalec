@@ -297,7 +297,7 @@ nav {
 
 .container-slide {
     display: flex;
-    width: 50vw;
+    max-width: 100%;
     margin-left: $main-margin;
     margin-bottom: 1%;
 
@@ -712,11 +712,112 @@ nav {
 .header-left {
     display: none;
     }
+
+    .ham-menu {
+        display: flex;
+    }
+    
+    .header-left {
+        display: none;
+    }
+    
+    nav {
+        display: block;
+        height: 0;
+    
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 100;
+        background-color: rgba(0, 128, 0, .8);
+    
+        transition: height .4s;
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            margin-left: 0;
+            height: 0;
+    
+            .acordeon-li {
+                display: flex;
+                width: 100%;
+                border-bottom: 1px solid #fff;
+                height: 0;
+                padding: 0;
+                transition: padding .4s, height .4s;
+                opacity: 0;
+    
+                &:last-child {
+                    border: none;
+                }
+    
+                a {
+                    width: 100%;
+                    text-align: center;
+                    background-color: rgba(0, 128, 0, 0);
+                    padding: 0px;
+                    
+                    
+    
+                }
+            }
+        }
+    
+        .icon {
+    
+            display: none;
+        }
+    
+    }
+
+    .show-nav {
+    
+        height: 487px;
+        transition: height .4s;
+    }
+    
+    .acordeon-li.show-li {
+        opacity: 1;
+        height: 100px;
+        padding: 25px;
+        transition:padding .4s, height .4s;
+    }
+
+    // fotogaleria na headery
+.container-slide {
+    max-width: 100%;
+
+}
+
+.header-right {
+
+    h1 {
+        font-size: 77px;
+        padding: 5px $main-margin;
+    }
+
+    ul {
+        flex-direction: column;
+        font-size: 13px;
+        padding-left: $main-margin;
+        padding-top: $main-margin;
+
+        li {
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
+    
     }
 
 
 /* TELEFON 576px*/
-@media (max-width: 576px ){
+@media (max-width: 576px){
 .ham-menu {
     display: flex;
 }
@@ -792,7 +893,8 @@ nav {
 .header-right {
 
     h1 {
-        font-size: 77px;
+        font-size: 65px;
+        text-align: center;
         padding: 5px $main-margin;
     }
 
@@ -941,8 +1043,9 @@ nav {
 // fotogaleria na headery
 
 .container-slide {
-    width: 55vh;
+    max-width: 100%;
 }
+
 
 
 }
@@ -969,13 +1072,12 @@ nav {
 
 // fotogaleria na headery
 .container-slide {
-    width: 50vh;
-
+   max-width: 100%;
 }
 
-.slide:nth-of-type(3){
-    display: none;
-}
+// .slide:nth-of-type(3){
+//     display: none;
+// }
 
 }
 
@@ -1004,12 +1106,8 @@ nav {
     
     // fotogaleria na headery
     .container-slide {
-        width: 42vh;
+        max-width: 100%;
     
-    }
-    
-    .slide:nth-of-type(3){
-        display: none;
     }
     
     }
