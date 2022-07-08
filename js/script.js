@@ -58,10 +58,9 @@ showImg.addEventListener("click", function (e) {
     imger.setAttribute("src", this.href);
     imger.classList.add("imger");
 
+    // pridanie modalu a img
     body.appendChild(modal);
     modal.appendChild(imger);
-
-    console.log()
 
     //Vynazaie modalu
     document.addEventListener("keyup", function(e){
@@ -69,12 +68,6 @@ showImg.addEventListener("click", function (e) {
         modal.remove()
       }
    });
-
-   modal.addEventListener("click", function(e){
-      modal.remove()
-   })
-   
-
   
 });
 
