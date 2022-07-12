@@ -618,7 +618,27 @@ nav {
     }
 }
 
-/* == fotogaleria ============================================= */
+/* ===== FOOTER ================================================== */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+
+    background-color: rgb(27, 27, 27);
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* == FOTOGALERIA ============================================= */
 
 
 .fotogallery-header {
@@ -646,7 +666,6 @@ nav {
 
 
 .fotogalery-block {
-    // display: none;
     width: 100%;
 
     img {
