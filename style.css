@@ -863,6 +863,15 @@ nav ul li a:hover {
 }
 
 .fotogalery-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -871,8 +880,30 @@ nav ul li a:hover {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 5px 2.5px;
+}
+
+.container-img {
+  position: relative;
+  margin: 5px 2.5px 0 2.5px;
+}
+
+.container-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
   cursor: pointer;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.container-cover:hover {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
 }
 
 /*====== MODAL BOX ==========*/
