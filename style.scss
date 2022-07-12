@@ -1057,7 +1057,7 @@ nav {
     margin-top: 30px;
     
      &::after {
-        width: 241px;
+        width: 178px;
      }
 
     h1 {
@@ -1065,10 +1065,21 @@ nav {
     }
 }
 
-
 .wraper-header {
-    justify-content: center;
 
+    &:before {
+        width: 25%;
+        margin-left: $main-margin;
+    }
+
+    &::after {
+        width: 25%;
+        margin-right: $main-margin;
+    }
+
+    h2 {
+        font-size: 47px;
+    }
 }
 
 }
@@ -1110,7 +1121,7 @@ nav {
     margin-top: 30px;
     
      &::after {
-        width: 221px;
+        width: 165px;
      }
 
     h1 {
@@ -1118,14 +1129,22 @@ nav {
     }
 }
 
-
 .wraper-header {
-    justify-content: center;
 
+    &:before {
+        width: 20%;
+        margin-left: $main-margin;
+    }
+
+    &::after {
+        width: 20%;
+        margin-right: $main-margin;
+    }
+
+    h2 {
+        font-size: 47px;
+    }
 }
-
-
-
 
 }
 
@@ -1171,7 +1190,7 @@ nav {
         margin-top: 30px;
 
          &::after {
-            width: 221px;
+            width: 141px;
          }
 
         h1 {
@@ -1180,8 +1199,20 @@ nav {
     }
 
     .wraper-header {
-        justify-content: center;
 
+        &:before {
+            width: 17%;
+            margin-left: $main-margin;
+        }
+
+        &::after {
+            width: 17%;
+            margin-right: $main-margin;
+        }
+
+        h2 {
+            font-size: 47px;
+        }
     }
     
     }
