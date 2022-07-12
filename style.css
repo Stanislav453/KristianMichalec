@@ -808,23 +808,34 @@ nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
-  margin-top: .1%;
-  background-color: green;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-  cursor: pointer;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.wraper-header:hover {
-  background-color: #009a00;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
+.wraper-header::before {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: green;
+}
+
+.wraper-header::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: green;
 }
 
 .wraper-header h2 {
-  color: #fff;
+  color: green;
   font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 65px;
 }
 
 .fotogalery-block {
@@ -1157,15 +1168,21 @@ nav ul li a:hover {
     margin-top: 30px;
   }
   .main-header::after {
-    width: 241px;
+    width: 178px;
   }
   .main-header h1 {
     font-size: 75px;
   }
-  .wraper-header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .wraper-header:before {
+    width: 25%;
+    margin-left: 3%;
+  }
+  .wraper-header::after {
+    width: 25%;
+    margin-right: 3%;
+  }
+  .wraper-header h2 {
+    font-size: 47px;
   }
 }
 
@@ -1188,15 +1205,21 @@ nav ul li a:hover {
     margin-top: 30px;
   }
   .main-header::after {
-    width: 221px;
+    width: 165px;
   }
   .main-header h1 {
     font-size: 64px;
   }
-  .wraper-header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .wraper-header:before {
+    width: 20%;
+    margin-left: 3%;
+  }
+  .wraper-header::after {
+    width: 20%;
+    margin-right: 3%;
+  }
+  .wraper-header h2 {
+    font-size: 47px;
   }
 }
 
@@ -1222,15 +1245,21 @@ nav ul li a:hover {
     margin-top: 30px;
   }
   .main-header::after {
-    width: 221px;
+    width: 141px;
   }
   .main-header h1 {
     font-size: 53px;
   }
-  .wraper-header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .wraper-header:before {
+    width: 17%;
+    margin-left: 3%;
+  }
+  .wraper-header::after {
+    width: 17%;
+    margin-right: 3%;
+  }
+  .wraper-header h2 {
+    font-size: 47px;
   }
 }
 /*# sourceMappingURL=style.css.map */
