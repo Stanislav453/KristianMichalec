@@ -650,21 +650,13 @@ nav {
 
     img {
         width: 100%;
-        height: 0;
+        height: 300px;
         object-fit: cover;
-        // padding: 5px 2.5px;
+        padding: 5px 2.5px;
     
         cursor: pointer;
     }
 
-}
-
-.fotogalery-block.show-f {
-    height: auto;
-}
-
-.show-img {
-    height: 300px;
 }
 
 /*====== MODAL BOX ==========*/
@@ -1033,13 +1025,13 @@ nav {
     
     i {
         transform: scale(.8);
-        color: #e45e5e;
+        color: $back-to-home-color;
         font-size: 90px;
 
         &:hover {
             
             transform: scale(1);
-            color: #e45e5e;
+            color: $back-to-home-color;
             transition: transform 1s;
         }
     }
@@ -1088,7 +1080,7 @@ nav {
 }
 
 
-/* Telefon 375px */
+/* Telefon 320px */
 @media (max-width: 320px) {
 
     // header
@@ -1115,11 +1107,27 @@ nav {
         max-width: 100%;
     
     }
-    
+
+    // FOTOGALERIA
+
+    .ham-menu {
+
+        i {
+           font-size: 53px; 
+        }
     }
 
+    .fotogallery-header {
+        height: 143px;
 
+        h1 {
+            font-size: 43px;
+        }
+    }
 
+    .wraper-header {
+        justify-content: center;
 
-
-
+    }
+    
+    }
