@@ -154,21 +154,29 @@
 @mixin wraper-header-style(){ 
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
-    height: 50px;
-    margin-top: .1%;
+    &::before  {
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: $main-color;
+  
+    }
 
-    background-color: green;
-    transition: background-color .3s;
-    cursor: pointer;
+    &::after {
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: $main-color;
 
-        &:hover {
-            background-color: lighten($color: green, $amount: 5);
-            transition: background-color .3s;
-        }
+    }
 
     h2 {
-        color: #fff;
+        color: $main-color;
         font-weight: 900;
+        font-family: $main-font;
+        font-size: 65px;
     }
 }
