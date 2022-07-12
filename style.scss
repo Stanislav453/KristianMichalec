@@ -54,6 +54,11 @@ span {
    }
 
 
+.main-header {
+    @include main-header();
+    margin-top: 60px;
+}
+
 
 /*=== Hlavička === */
 
@@ -121,7 +126,7 @@ nav {
 
 
             a {
-                padding: 30px;
+                padding: 15px 30px;
 
                 color: #fff;
                 text-decoration: none;
@@ -380,10 +385,6 @@ nav {
 
 
 }
-
-
-    
-// }
 
 .content-line {
  
