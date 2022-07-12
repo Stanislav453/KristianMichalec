@@ -1153,11 +1153,14 @@ nav ul li a:hover {
   .ham-menu i {
     font-size: 58px;
   }
-  .fotogallery-header {
-    height: 160px;
+  .main-header {
+    margin-top: 30px;
   }
-  .fotogallery-header h1 {
-    font-size: 60px;
+  .main-header::after {
+    width: 241px;
+  }
+  .main-header h1 {
+    font-size: 75px;
   }
   .wraper-header {
     -webkit-box-pack: center;
@@ -1181,11 +1184,14 @@ nav ul li a:hover {
   .ham-menu i {
     font-size: 58px;
   }
-  .fotogallery-header {
-    height: 143px;
+  .main-header {
+    margin-top: 30px;
   }
-  .fotogallery-header h1 {
-    font-size: 53px;
+  .main-header::after {
+    width: 221px;
+  }
+  .main-header h1 {
+    font-size: 64px;
   }
   .wraper-header {
     -webkit-box-pack: center;
@@ -1212,11 +1218,14 @@ nav ul li a:hover {
   .ham-menu i {
     font-size: 53px;
   }
-  .fotogallery-header {
-    height: 143px;
+  .main-header {
+    margin-top: 30px;
   }
-  .fotogallery-header h1 {
-    font-size: 43px;
+  .main-header::after {
+    width: 221px;
+  }
+  .main-header h1 {
+    font-size: 53px;
   }
   .wraper-header {
     -webkit-box-pack: center;
