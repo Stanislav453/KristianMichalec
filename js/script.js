@@ -125,7 +125,9 @@ for (let i = 0; i < sluzbyBlockLiR.length; i++) {
 
 // == back to home button ===================================
 
-let backToHome = document.querySelector(".back_to_home");
+let backToHome  = document.querySelector(".back_to_home");
+let backToHomeI = document.querySelector(".back_to_home i")
+
 
 window.addEventListener("scroll", function (e) {
   let scroll = this.window.scrollY;
@@ -135,4 +137,17 @@ window.addEventListener("scroll", function (e) {
   } else {
     backToHome.style.display = "none";
   }
-});
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+
