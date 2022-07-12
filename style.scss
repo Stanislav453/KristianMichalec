@@ -1044,10 +1044,28 @@ nav {
     max-width: 100%;
 }
 
+// fotogaleria
+.ham-menu {
 
+    i {
+       font-size: 58px; 
+    }
+}
+
+.fotogallery-header {
+    height: 160px;
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+.wraper-header {
+    justify-content: center;
 
 }
 
+}
 
 
 /* Telefon 375px */
@@ -1073,9 +1091,30 @@ nav {
    max-width: 100%;
 }
 
-// .slide:nth-of-type(3){
-//     display: none;
-// }
+
+// fotogaleria
+.ham-menu {
+
+    i {
+       font-size: 58px; 
+    }
+}
+
+.fotogallery-header {
+    height: 143px;
+
+    h1 {
+        font-size: 53px;
+    }
+}
+
+.wraper-header {
+    justify-content: center;
+
+}
+
+
+
 
 }
 
