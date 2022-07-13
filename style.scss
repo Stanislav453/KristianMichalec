@@ -738,6 +738,15 @@ nav {
   .ham-menu {
     display: none;
   }
+
+  .header-right {
+
+    .container-slide { 
+      display: none;
+      
+     }
+  
+    }
 }
 
 /* Laptop-l */
@@ -745,12 +754,109 @@ nav {
   .ham-menu {
     display: none;
   }
+
+  .header-right {
+
+    .container-slide { 
+      display: none;
+      
+    }
+
+    .hight-text {
+
+      h2 {
+        font-size: 30px;
+      }
+
+      h4 {
+        font-size: 27px;
+      }
+    }
+ 
+    h3 {
+      font-size: 57px;
+    }
+
+    .service {
+
+      a {
+        padding: 19px 53px;
+        font-size: 29px;
+      }
+    }
+
+    ul {
+      font-size: 11px;
+
+      i {
+        font-size: 21px;
+      }
+    }
+  
+  }
+
+  .slide {
+    height: 589px;
+  }
 }
 
 /* Laptop */
 @media (max-width: 1025px) {
   .ham-menu {
     display: none;
+  }
+
+  .header-right {
+
+    .container-slide { 
+      display: none;
+      
+    }
+
+    .hight-text {
+
+      h1 {
+        font-size: 81px;
+      }
+
+      h2 {
+        font-size: 20px;
+        line-height: 0;
+      }
+
+      h4 {
+        font-size: 18px;
+        line-height: 42px;
+      }
+    }
+ 
+    h3 {
+      font-size: 43px;
+    }
+
+    .service {
+
+      a {
+        padding: 12px 37px;
+        font-size: 24px;
+      }
+    }
+
+    ul {
+      font-size: 11px;
+
+      i {
+        font-size: 21px;
+      }
+    }
+  
+  }
+
+
+  .container-slide {
+    .slide {
+      height: 485px;
+    }
   }
 }
 
@@ -921,16 +1027,22 @@ nav {
   }
 
   .header-right {
-    h1 {
-      font-size: 65px;
-      text-align: center;
-      padding: 5px $main-margin;
-    }
 
-    h2,
-    h4 {
-      font-size: 16px;
-    line-height: 26px;
+    .hight-text {
+
+      h1 {
+        font-size: 68px;
+      }
+
+      h2 {
+        font-size: 17px;
+        line-height: 32px;
+      }
+
+      h4 {
+        font-size: 14px;
+        line-height: 0px;
+      }
     }
 
     h3 {
@@ -949,7 +1061,23 @@ nav {
         }
       }
     }
+
+    .container-slide {
+      display: flex;
+
+      .slide {
+        height: 300px;
+      }
+    
+      .active {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
   }
+
+
 
   .second-header {
 
@@ -958,6 +1086,11 @@ nav {
     }
 
   }
+
+  .service {
+    display: none;
+  }
+
 
   // O MNE BLOCK
 
@@ -1113,88 +1246,79 @@ nav {
 
 /* Telefon 375px */
 @media (max-width: 375px) {
+
   // header
 
   .header-right {
-    h1 {
-      font-size: 68px;
-      margin-bottom: 0;
+
+    .hight-text {
+
+      h1 {
+        font-size: 68px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 17px;
+        line-height: 43px;
+  
+      }
+
+      h4 {
+        font-size: 13px;
+        line-height: 0px;
+      }
     }
 
+
     h3 {
+      margin-top: 18px;
       font-size: 35px;
     }
 
-    h2 {
-      font-size: 16px;
-      line-height: 43px;
-
-    }
 
     h4 {
       font-size: 14px;
       line-height: 17px;
     }
+
+    ul {
+      font-size: 11px;
+
+      li {
+
+        i {
+          font-size: 20px;
+        }
+      }
+      
+    }
     }
   }
 
-  // fotogaleria na headery
-  .container-slide {
-    max-width: 100%;
-  }
-
-  // fotogaleria
-  .ham-menu {
-    i {
-      font-size: 58px;
-    }
-  }
-
-  .main-header {
-    margin-top: 30px;
-
-    &::after {
-      width: 165px;
-    }
-
-    h1 {
-      font-size: 64px;
-    }
-  }
-
-  .wraper-header {
-    &:before {
-      width: 20%;
-      margin-left: $main-margin;
-    }
-
-    &::after {
-      width: 20%;
-      margin-right: $main-margin;
-    }
-
-    h2 {
-      font-size: 47px;
-    }
-  }
-
-  .second-header {
-
-    h2 {
-      font-size: 89px;
-    }
-
-  }
-
-
-/* Telefon 320px */
+  /* Telefon 320px */
 @media (max-width: 320px) {
   // header
 
   .header-right {
-    h1 {
-      font-size: 57px;
-      margin-bottom: 0;
+
+    .hight-text {
+
+      h1 {
+        font-size: 51px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 12px;
+        line-height: 43px;
+  
+      }
+
+      h4 {
+        font-size: 11px;
+        line-height: 0px;
+      }
     }
 
     h2{
@@ -1202,12 +1326,24 @@ nav {
     }
 
     h3 {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     h4 {
       font-size: 12px;
       line-height: 3px;
+    }
+
+    ul {
+      font-size: 9px;
+
+      li { 
+        
+        i {
+          font-size: 19px;
+        }
+      }
+
     }
   }
 
@@ -1267,3 +1403,6 @@ nav {
     }
   }
 }
+
+
+
