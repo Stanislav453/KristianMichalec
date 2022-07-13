@@ -929,7 +929,8 @@ nav {
 
     h2,
     h4 {
-      font-size: 22px;
+      font-size: 16px;
+    line-height: 26px;
     }
 
     h3 {
@@ -948,6 +949,14 @@ nav {
         }
       }
     }
+  }
+
+  .second-header {
+
+    h2 {
+      font-size: 114px;
+    }
+
   }
 
   // O MNE BLOCK
@@ -1115,6 +1124,18 @@ nav {
     h3 {
       font-size: 35px;
     }
+
+    h2 {
+      font-size: 16px;
+      line-height: 43px;
+
+    }
+
+    h4 {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    }
   }
 
   // fotogaleria na headery
@@ -1156,7 +1177,15 @@ nav {
       font-size: 47px;
     }
   }
-}
+
+  .second-header {
+
+    h2 {
+      font-size: 89px;
+    }
+
+  }
+
 
 /* Telefon 320px */
 @media (max-width: 320px) {
@@ -1168,13 +1197,17 @@ nav {
       margin-bottom: 0;
     }
 
-    h2,
-    h4 {
-      font-size: 17px;
+    h2{
+      font-size: 14px;
     }
 
     h3 {
       font-size: 30px;
+    }
+
+    h4 {
+      font-size: 12px;
+      line-height: 3px;
     }
   }
 
@@ -1201,6 +1234,10 @@ nav {
     h1 {
       font-size: 53px;
     }
+
+    h2 {
+      font-size: 53px;
+    }
   }
 
   .wraper-header {
@@ -1214,9 +1251,14 @@ nav {
       margin-right: $main-margin;
     }
 
+  }
+
+  .second-header {
+
     h2 {
-      font-size: 47px;
+      font-size: 89px;
     }
+
   }
 
   .second-nav {

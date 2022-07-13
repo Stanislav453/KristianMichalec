@@ -1209,7 +1209,8 @@ nav ul li a:hover {
   }
   .header-right h2,
   .header-right h4 {
-    font-size: 22px;
+    font-size: 16px;
+    line-height: 26px;
   }
   .header-right h3 {
     font-size: 40px;
@@ -1225,6 +1226,9 @@ nav ul li a:hover {
   }
   .header-right ul li i {
     font-size: 24px;
+  }
+  .second-header h2 {
+    font-size: 114px;
   }
   .o_mne_block p {
     font-size: 17px;
@@ -1342,32 +1346,52 @@ nav ul li a:hover {
   .header-right h3 {
     font-size: 35px;
   }
-  .container-slide {
-    max-width: 100%;
+  .header-right h2 {
+    font-size: 16px;
+    line-height: 43px;
   }
-  .ham-menu i {
-    font-size: 58px;
+  .header-right h4 {
+    font-size: 14px;
+    line-height: 17px;
   }
-  .main-header {
-    margin-top: 30px;
-  }
-  .main-header::after {
-    width: 165px;
-  }
-  .main-header h1 {
-    font-size: 64px;
-  }
-  .wraper-header:before {
-    width: 20%;
-    margin-left: 3%;
-  }
-  .wraper-header::after {
-    width: 20%;
-    margin-right: 3%;
-  }
-  .wraper-header h2 {
-    font-size: 47px;
-  }
+}
+
+.container-slide {
+  max-width: 100%;
+}
+
+.ham-menu i {
+  font-size: 58px;
+}
+
+.main-header {
+  margin-top: 30px;
+}
+
+.main-header::after {
+  width: 165px;
+}
+
+.main-header h1 {
+  font-size: 64px;
+}
+
+.wraper-header:before {
+  width: 20%;
+  margin-left: 3%;
+}
+
+.wraper-header::after {
+  width: 20%;
+  margin-right: 3%;
+}
+
+.wraper-header h2 {
+  font-size: 47px;
+}
+
+.second-header h2 {
+  font-size: 89px;
 }
 
 /* Telefon 320px */
@@ -1376,12 +1400,15 @@ nav ul li a:hover {
     font-size: 57px;
     margin-bottom: 0;
   }
-  .header-right h2,
-  .header-right h4 {
-    font-size: 17px;
+  .header-right h2 {
+    font-size: 14px;
   }
   .header-right h3 {
     font-size: 30px;
+  }
+  .header-right h4 {
+    font-size: 12px;
+    line-height: 3px;
   }
   .container-slide {
     max-width: 100%;
@@ -1398,6 +1425,9 @@ nav ul li a:hover {
   .main-header h1 {
     font-size: 53px;
   }
+  .main-header h2 {
+    font-size: 53px;
+  }
   .wraper-header:before {
     width: 17%;
     margin-left: 3%;
@@ -1406,8 +1436,8 @@ nav ul li a:hover {
     width: 17%;
     margin-right: 3%;
   }
-  .wraper-header h2 {
-    font-size: 47px;
+  .second-header h2 {
+    font-size: 89px;
   }
   .second-nav ul {
     -webkit-box-orient: vertical;
